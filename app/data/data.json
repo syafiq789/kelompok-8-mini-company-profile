@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Kelompok 8 – Web Development & UI/UX",
+    "description": "Kami adalah tim pengembang yang berfokus pada pembuatan aplikasi web modern serta desain antarmuka (UI/UX) yang intuitif dan menarik, khususnya untuk kebutuhan akademik dan organisasi mahasiswa."
+  },
+  {
+    "title": "Pengelolaan Data Mahasiswa",
+    "description": "Kami menyediakan solusi digital untuk mengelola data mahasiswa secara terstruktur dan terintegrasi, meliputi pengolahan biodata, pencatatan nilai akademik, serta monitoring kehadiran secara efisien dan akurat."
+  },
+  {
+    "title": "Pengembangan Sistem Informasi Berbasis Web",
+    "description": "Layanan pembuatan sistem informasi berbasis web menggunakan teknologi modern seperti Next.js yang responsif, cepat, dan mudah digunakan untuk mendukung aktivitas akademik maupun organisasi."
+  },
+  {
+    "title": "Perancangan dan Implementasi Database",
+    "description": "Kami merancang dan mengimplementasikan database yang optimal, mulai dari penggunaan JSON sebagai dummy data hingga integrasi dengan database relasional untuk mendukung pengolahan data yang lebih kompleks."
+  },
+  {
+    "title": "Manajemen Tugas, Jadwal, dan Deadline",
+    "description": "Sistem yang membantu pengguna dalam mengatur tugas perkuliahan, jadwal kegiatan, serta deadline secara terorganisir sehingga meningkatkan produktivitas dan manajemen waktu."
+  },
+  {
+    "title": "Sistem Absensi Digital",
+    "description": "Pengembangan sistem absensi berbasis digital yang praktis, efisien, dan mudah diakses untuk mendukung kegiatan belajar mengajar maupun aktivitas organisasi mahasiswa."
+  },
+  {
+    "title": "Desain UI/UX Modern",
+    "description": "Kami menghadirkan desain antarmuka yang menarik, user-friendly, dan berfokus pada pengalaman pengguna (user experience) agar aplikasi yang dikembangkan mudah dipahami dan nyaman digunakan."
+  }
+]

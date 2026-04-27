@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f9fafb;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  ::selection {
+    background-color: #6ee7b7;
+    color: #064e3b;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #f1f5f9; }
+  ::-webkit-scrollbar-thumb { background: #a7f3d0; border-radius: 999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #34d399; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-emerald-500 hover:bg-emerald-600 active:scale-95 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 shadow-sm inline-block;
+  }
+  .btn-secondary {
+    @apply bg-white border border-gray-200 hover:border-gray-400 text-gray-700 px-6 py-2.5 rounded-lg font-semibold text-sm transition-all duration-200 inline-block;
+  }
+  .card {
+    @apply bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-emerald-200;
+  }
+  .badge {
+    @apply inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-emerald-600 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full;
+  }
+  .section-label {
+    @apply text-xs font-semibold tracking-widest uppercase text-gray-400 mb-5 block;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #10b981, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-dot-pattern {
+    background-image: radial-gradient(circle, #d1fae5 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.5s ease forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
