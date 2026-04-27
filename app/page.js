@@ -1,23 +1,8 @@
+import Link from 'next/link'
+
 export default function HomePage() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white flex flex-col items-center">
-
-      {/* NAVBAR */}
-      <header className="w-full border-b border-white/10 backdrop-blur-md bg-white/5">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
-          <h1 className="text-xl font-bold">
-            Kelompok 8 Web Dev & UIUX 🚀
-          </h1>
-
-          <nav className="hidden md:flex gap-6 text-sm text-white/70">
-            <a className="hover:text-white" href="#">Home</a>
-            <a className="hover:text-white" href="#">About</a>
-            <a className="hover:text-white" href="#">Services</a>
-            <a className="hover:text-white" href="#">Team</a>
-            <a className="hover:text-white" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
 
       {/* HERO */}
       <section className="w-full flex flex-col items-center text-center px-6 py-24">
@@ -34,13 +19,13 @@ export default function HomePage() {
         </p>
 
         <div className="mt-10 flex gap-4">
-          <button className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-xl font-semibold">
+          <Link href="/contact" className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 rounded-xl font-semibold transition">
             Mulai Sekarang ✦
-          </button>
+          </Link>
 
-          <button className="px-6 py-3 border border-white/20 hover:border-white rounded-xl">
+          <Link href="/team" className="px-6 py-3 border border-white/20 hover:border-white rounded-xl transition">
             Tim Kami →
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -92,7 +77,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      
       {/* FOOTER */}
       <footer className="w-full border-t border-white/10 text-center py-10 text-white/40">
         © 2026 Kelompok 8 Web Dev & UIUX - Mini Company Profile
